@@ -1,0 +1,110 @@
+[33mcommit 5f54496cb34cfa777041cf94daec037a302ef450[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Nanang Ardiansyah <nanangardiansyah@student.uns.ac.id>
+Date:   Sat Nov 16 18:09:02 2024 +0700
+
+    new category
+
+[33mcommit 0d25b891f8268abcf7b042cdf897cc9dd9e170de[m
+Author: Nanang Ardiansyah <nanangardiansyah@student.uns.ac.id>
+Date:   Mon Nov 11 18:48:32 2024 +0700
+
+    edit-view-dahsboard
+
+[33mcommit 27834d74e8c8769b26cc08b46184a1d547a993af[m
+Author: Nanang Ardiansyah <nanangardiansyah@student.uns.ac.id>
+Date:   Mon Nov 11 13:11:40 2024 +0700
+
+    first
+
+[33mcommit b5ee8123c1556354a09c1fd2827de9b890225908[m
+Merge: 1b97a1f c8a7efc
+Author: SulthanSyahrul <Sulthansyahrul2@gmail.com>
+Date:   Mon Nov 11 09:20:49 2024 +0700
+
+    Merge branch 'main' of https://github.com/nanangarr/Dashboard-Admin-SBB
+
+[33mcommit 1b97a1fc7e50849582c5487a8daf133181274cf9[m
+Author: SulthanSyahrul <Sulthansyahrul2@gmail.com>
+Date:   Mon Nov 11 09:11:05 2024 +0700
+
+    new file:   app/Console/Kernel.php
+    new file:   app/Exceptions/Handler.php
+    new file:   app/Http/Controllers/AuthController.php
+    new file:   app/Http/Controllers/DashboardController.php
+    new file:   app/Http/Controllers/PelangganController.php
+    new file:   app/Http/Controllers/ProdukController.php
+    new file:   app/Http/Kernel.php
+    new file:   app/Http/Middleware/Authenticate.php
+    new file:   app/Http/Middleware/EncryptCookies.php
+    new file:   app/Http/Middleware/PreventRequestsDuringMaintenance.php
+    new file:   app/Http/Middleware/RedirectIfAuthenticated.php
+    new file:   app/Http/Middleware/TrimStrings.php
+    new file:   app/Http/Middleware/TrustHosts.php
+    new file:   app/Http/Middleware/TrustProxies.php
+    new file:   app/Http/Middleware/ValidateSignature.php
+    new file:   app/Http/Middleware/VerifyCsrfToken.php
+    new file:   app/Models/Pelanggan.php
+    new file:   app/Models/Produk.php
+    modified:   app/Models/User.php
+    new file:   app/Providers/AuthServiceProvider.php
+    new file:   app/Providers/BroadcastServiceProvider.php
+    new file:   app/Providers/EventServiceProvider.php
+    new file:   app/Providers/RouteServiceProvider.php
+    modified:   composer.json
+    modified:   composer.lock
+    new file:   config/sweetalert.php
+    renamed:    database/migrations/0001_01_01_000000_create_users_table.php -> database/migrations/0001_01_01_000000_create_pelanggan_table.php
+    deleted:    database/migrations/0001_01_01_000001_create_cache_table.php
+    deleted:    database/migrations/0001_01_01_000002_create_jobs_table.php
+    new file:   database/migrations/2014_10_12_000000_create_users_table.php
+    new file:   database/migrations/2014_10_12_100000_create_password_reset_tokens_table.php
+    new file:   database/migrations/2019_08_19_000000_create_failed_jobs_table.php
+    new file:   database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+    new file:   database/migrations/2023_07_31_144147_create_barangs_table.php
+    modified:   package-lock.json
+    modified:   package.json
+    new file:   public/images/20241103100408.png
+    new file:   public/images/20241103101718.png
+    new file:   public/images/20241104015244.png
+    new file:   public/images/20241104015257.png
+    new file:   public/images/20241104015801.png
+    new file:   public/images/20241111001720.png
+    new file:   public/images/produk/20241104021619.png
+    new file:   public/images/produk/20241111001210.png
+    new file:   public/images/produk/20241111001946.png
+    new file:   public/images/produk/20241111002632.png
+    new file:   public/images/produk/20241111002648.png
+    new file:   public/images/produk/20241111002706.png
+    new file:   public/images/produk/20241111020640.png
+    new file:   public/vendor/sweetalert/sweetalert.all.js
+    new file:   resources/images/FOTOKU.jpg
+    new file:   resources/views/auth/login.blade.php
+    new file:   resources/views/auth/register.blade.php
+    new file:   resources/views/auth/resetPW.blade.php
+    new file:   resources/views/customer/akunPelanggan.blade.php
+    modified:   resources/views/customer/pelanggan.blade.php
+    modified:   resources/views/dashboard/dashboard.blade.php
+    new file:   resources/views/pendapatan/pendapatan.blade.php
+    new file:   resources/views/pesanan/pesanan.blade.php
+    modified:   resources/views/produk/add.blade.php
+    modified:   resources/views/produk/edit.blade.php
+    modified:   resources/views/produk/produk.blade.php
+    modified:   resources/views/produk/view.blade.php
+    modified:   resources/views/template/main.blade.php
+    new file:   resources/views/vendor/sweetalert/alert.blade.php
+    new file:   routes/api.php
+    new file:   routes/channels.php
+    modified:   routes/web.php
+    modified:   tailwind.config.js
+
+[33mcommit c8a7efc1d1a28ad8fccdc77f5efa81e147323e1c[m
+Author: Nanang Ardiansyah <nanangardiansyah@student.uns.ac.id>
+Date:   Fri Nov 1 13:17:58 2024 +0700
+
+    first commit
+
+[33mcommit 4ce3bfc9fd9ac79ac03d59bb223f5cdb307aa1ed[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Nanang Ardiansyah <nanangardiansyah@student.uns.ac.id>
+Date:   Tue Oct 29 13:30:37 2024 +0700
+
+    first commit

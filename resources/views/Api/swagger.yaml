@@ -1,0 +1,168 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Tugas-BE
+  contact: {}
+host: localhost:8001
+basePath: /api
+securityDefinitions: {}
+schemes:
+- http
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /produk:
+    post:
+      summary: Input
+      tags:
+      - Produk
+      operationId: Input
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - multipart/form-data
+      parameters:
+      - name: Content-Type
+        in: header
+        required: false
+        enum:
+        - application/json
+        type: string
+        description: ''
+      - name: name
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: category
+        in: formData
+        required: true
+        type: string
+        description: ''
+      - name: image
+        in: formData
+        required: true
+        type: file
+        format: file
+        description: ''
+      - name: stock
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: price
+        in: formData
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      - name: description
+        in: formData
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    get:
+      summary: list
+      tags:
+      - Produk
+      operationId: list
+      deprecated: false
+      produces:
+      - application/json
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+  /produk/{id}:
+    get:
+      summary: detail
+      tags:
+      - Produk
+      operationId: detail
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    put:
+      summary: Update Product
+      tags:
+      - Produk
+      operationId: updateProduct
+      deprecated: false
+      produces:
+      - application/json
+      consumes:
+      - multipart/form-data
+      parameters:
+      - name: name
+        in: formData
+        type: string
+        description: ''
+      - name: category
+        in: formData
+        type: string
+        description: ''
+      - name: image
+        in: formData
+        type: file
+        format: file
+        description: ''
+      - name: stock
+        in: formData
+        type: string
+        description: ''
+      - name: price
+        in: formData
+        type: string
+        description: ''
+      - name: description
+        in: formData
+        type: string
+        description: ''
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+    delete:
+      summary: delete
+      tags:
+      - Produk
+      operationId: delete
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        '200':
+          description: ''
+          headers: {}
+tags:
+- name: Produk
